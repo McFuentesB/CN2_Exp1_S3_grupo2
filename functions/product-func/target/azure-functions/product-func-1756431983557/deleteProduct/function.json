@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../product-func-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.functions.product.ProductFunction.deleteProduct",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "products/{id}",
+    "methods" : [ "DELETE" ],
+    "authLevel" : "FUNCTION"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
